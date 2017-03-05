@@ -49,11 +49,11 @@ namespace ConverUnidades
             }
             if (from == "Onza" && to == "Gramo")
             {
-	        textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1) * 28.349);
+	        textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 28.349);
             }
             if (from == "Gramo" && to == "Onza")
             {
-        	textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1) * 0.035274);
+        	textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 0.035274);
             }
             if (from == to)
             {
