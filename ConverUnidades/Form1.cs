@@ -169,11 +169,36 @@ namespace ConverUnidades
                 textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 0.0625);
             }
 
+            ///METRO CONTRA TODOS
+            if (from == "Metro" && to == "Yarda")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 1.09361);
+            }
+            if (from == "Metro" && to == "Vara")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 0.835);
+            }
+            if (from == "Metro" && to == "Milla")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 0.000621371);
+            }
+            if (from == "Metro" && to == "Kilometro")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 1000);
+            }
+            if (from == "Metro" && to == "Pie")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 3.28084);
+            }
+            if (from == "Metro" && to == "Pulgada")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 39.3701);
+            }
             ///
 
-            if (from == to)
+            else
             {
-                MessageBox.Show("Has introducido las mismas unidades");
+                MessageBox.Show("Seleccione Unidades correctamente.");
             }
         }
     }
