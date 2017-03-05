@@ -319,6 +319,31 @@ namespace ConverUnidades
             {
                 textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 12);
             }
+            ///PULGADA CONTRA TODOS
+            if (from == "Pulgada" && to == "Metro")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 0.0254);
+            }
+            if (from == "Pulgada" && to == "Yarda")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 0.027777777777778);
+            }
+            if (from == "Pulgada" && to == "Vara")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 0.030386228100083);
+            }
+            if (from == "Pulgada" && to == "Milla")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 0.000016);
+            }
+            if (from == "Pulgada" && to == "Kilometro")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 0.00002540000);
+            }
+            if (from == "Pulgada" && to == "Pie")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 0.083333333333333);
+            }
             ///
 
             if (from == to)
