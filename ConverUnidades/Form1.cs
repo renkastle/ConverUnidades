@@ -344,8 +344,58 @@ namespace ConverUnidades
             {
                 textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 0.083333333333333);
             }
-            ///
-
+            ///HORAS  CONTRA TODOS
+            if (from == "Horas" && to == "Minutos")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 60);
+            }
+            if (from == "Horas" && to == "Segundos")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 3600);
+            }
+            if (from == "Horas" && to == "Dia")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 0.0416667);
+            }
+            ///MINUTOS CONTRA TODOS
+            if (from == "Minutos" && to == "Horas")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 0.0166667);
+            }
+            if (from == "Minutos" && to == "Segundos")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 60);
+            }
+            if (from == "Minutos" && to == "Dia")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 0.000694444);
+            }
+            ///SEGUDOS CONTRA TODOS
+            if (from == "Segundos" && to == "Horas")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 0.000277778);
+            }
+            if (from == "Segundos" && to == "Minutos")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 0.0166667);
+            }
+            if (from == "Segundos" && to == "Dia")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 0.0000115741);
+            }
+            ///DIAS CONTRA TODOS
+            if (from == "Dia" && to == "Horas")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 24);
+            }
+            if (from == "Dia" && to == "Minutos")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 1440);
+            }
+            if (from == "Dia" && to == "Segundos")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 86400);
+            }
             if (from == to)
             {
                 MessageBox.Show("Has introducido las mismas unidades");
