@@ -100,10 +100,33 @@ namespace ConverUnidades
             }
             if (from == "Gramo" && to == "Onza")
             {
-                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 0, 0352739200000000003);
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 0.0352739200000000003);
+            }
+
+            ///MILIGRAMO CONTRA TODOS
+            if (from == "Miligramo" && to == "Tonelada")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 0.000000001);
+            }
+            if (from == "Miligramo" && to == "Kilogramo")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 0.000001);
+            }
+            if (from == "Miligramo" && to == "Gramo")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 0.001);
+            }
+            if (from == "Miligramo" && to == "Libra")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 0.000002204623);
+            }
+            if (from == "Miligramo" && to == "Onza")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 0.00003527396);
             }
 
             ///
+
             if (from == to)
             {
                 MessageBox.Show("Has introducido las mismas unidades");
