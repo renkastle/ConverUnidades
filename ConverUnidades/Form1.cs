@@ -196,9 +196,9 @@ namespace ConverUnidades
             }
             ///
 
-            else
+            if (from == to)
             {
-                MessageBox.Show("Seleccione Unidades correctamente.");
+                MessageBox.Show("Has introducido las mismas unidades");
             }
         }
     }
