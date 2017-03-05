@@ -31,5 +31,26 @@ namespace ConverUnidades
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            String from, to;
+
+            from = listBox1Desde.SelectedItem.ToString();
+            to = listBox1Hasta.SelectedItem.ToString();
+
+            if (from == "Gramo (gr)" && == "Kilogramo (kg)")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 1000);
+            }
+            if (from == "Kilogramo (kg)" && == "Gramo (gr)")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 0.001);
+            }
+            if (from == to)
+            {
+                MessageBox.Show("Has introducido las mismas unidades");
+            }
+        }
     }
 }
