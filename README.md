@@ -1,2 +1,2 @@
 # ConverUnidades
-This is a Work in Progress
+Parcial 1 de Programacion 2
