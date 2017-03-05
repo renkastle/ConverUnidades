@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ConverUnidades.Properties
+namespace TareaU.Properties
 {
 
 
