@@ -176,7 +176,7 @@ namespace ConverUnidades
             }
             if (from == "Metro" && to == "Vara")
             {
-                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 0.835);
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 1.1963081929167);
             }
             if (from == "Metro" && to == "Milla")
             {
@@ -218,6 +218,31 @@ namespace ConverUnidades
             if (from == "Yarda" && to == "Pulgada")
             {
                 textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 36);
+            }
+            ///VARA CONTRA TODOS
+            if (from == "Vara" && to == "Metro")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 0.835905);
+            }
+            if (from == "Vara" && to == "Yarda")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 0.91415682414698);
+            }
+            if (from == "Vara" && to == "Milla")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 0.00051940728644715);
+            }
+            if (from == "Vara" && to == "Kilometro")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 0.000835905);
+            }
+            if (from == "Vara" && to == "Pie")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 2.7424704724409);
+            }
+            if (from == "Vara" && to == "Pulgada")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 32.909645669291);
             }
             ///
 
