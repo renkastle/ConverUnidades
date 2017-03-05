@@ -17,12 +17,12 @@ namespace ConverUnidades
         [STAThread]
         static void Main()
         {
-            private void button1_click(object sender, EventArgs e)
+            private void button1(object sender, EventArgs e)
 
                 String from, to;
 
-                    From = listBoxFrom.SelectedItem.ToString();
-                    to = listBoxTo.SelectdItem.toString();
+                    From = listBoxDesde.SelectedItem.ToString();
+                    to = listBoxHasta.SelectdItem.toString();
 
                 if (from == "Gramo (gr)" && == "Kilogramo (kg)")
                 {
