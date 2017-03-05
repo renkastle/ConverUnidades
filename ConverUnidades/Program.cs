@@ -15,9 +15,44 @@ namespace ConverUnidades
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            private void button1_click(object sender, EventArgs e)
+
+                String from, to;
+
+                    From = listBoxFrom.SelectedItem.ToString();
+                    to = listBoxTo.SelectdItem.toString();
+
+                if (from == "Gramo (gr)" && == "Kilogramo (kg)")
+                {
+                    solucion.Txt = convert.ToString(Convert.ToInt32(cantidad.Text) * 1000);
+                }
+                if (from == "Kilogramo (kg)" && == "Gramo (gr)")
+                {
+                    solucion.Txt = convert.ToString(Convert.ToInt32(cantidad.Text) * 0.001);
+                }
+                if (from == "Onza (onz)" && == "Gramo (gr)")
+                {
+                    solucion.Txt = convert.ToString(Convert.ToInt32(cantidad.Text) * 28.349);
+                }
+                if (from == "Gramo (gr)" && == "Onza (onz)")
+                {
+                    solucion.Txt = convert.ToString(Convert.ToInt32(cantidad.Text) * 0.035274);
+                }
+                if (from == "Gramo (gr)" && == "Miligramo (mg)")
+                {
+                    solucion.Txt = convert.ToString(Convert.ToInt32(cantidad.Text) * 1000);
+                }
+                if (from == "Miligramo (ml)" && == "Gramo (gr)")
+                {
+                    solucion.Txt = convert.ToString(Convert.ToInt32(cantidad.Text) * 0.001);
+                }
+                if (from == to)
+                {
+                MessageBox.Show("Has introducido las mismas unidades");
+                }
+                    Application.EnableVisualStyles();
+                    Application.SetCompatibleTextRenderingDefault(false);
+                    Application.Run(new Form1());
         }
     }
 }
