@@ -39,6 +39,26 @@ namespace ConverUnidades
             from = listBox1Desde.SelectedItem.ToString();
             to = listBox1Hasta.SelectedItem.ToString();
 
+            if (from == "Tonelada" && to == "Kilogramo")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 1000);
+            }
+            if (from == "Tonelada" && to == "Gramo")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 1000000);
+            }
+            if (from == "Tonelada" && to == "Miligramo")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 1000000000);
+            }
+            if (from == "Tonelada" && to == "Libra")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 2204.62);
+            }
+            if (from == "Tonelada" && to == "Onza")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 35274);
+            }
             if (from == "Gramo" && to == "Kilogramo")
             {
                 textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 0.001);
