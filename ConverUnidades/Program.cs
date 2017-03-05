@@ -8,6 +8,8 @@ namespace ConverUnidades
 {
     static class Program
     {
+        InitializateComponent();
+    }
         /// <summary>
         /// Punto de entrada principal para la aplicación.
         ///Prueba de Edición
