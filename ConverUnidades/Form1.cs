@@ -41,11 +41,19 @@ namespace ConverUnidades
 
             if (from == "Gramo" && to == "Kilogramo")
             {
-                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 1000);
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 0.001);
             }
             if (from == "Kilogramo" && to == "Gramo")
             {
-                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 0.001);
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 1000);
+            }
+            if (from == "Onza (onz)" && to == "Gramo")
+            {
+	        textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1) * 28.349);
+            }
+            if (from == "Gramo" && to == "Onza")
+            {
+        	textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1) * 0.035274);
             }
             if (from == to)
             {
