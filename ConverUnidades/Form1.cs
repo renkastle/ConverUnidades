@@ -194,6 +194,31 @@ namespace ConverUnidades
             {
                 textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 39.3701);
             }
+            ///YARDA CONTRA TODOS
+            if (from == "Yarda" && to == "Metro")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 0.9144);
+            }
+            if (from == "Yarda" && to == "Vara")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 1.093904211603);
+            }
+            if (from == "Yarda" && to == "Milla")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 0.000568182);
+            }
+            if (from == "Yarda" && to == "Kilometro")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 0.0009144);
+            }
+            if (from == "Yarda" && to == "Pie")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 3);
+            }
+            if (from == "Yarda" && to == "Pulgada")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 36);
+            }
             ///
 
             if (from == to)
