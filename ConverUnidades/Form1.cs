@@ -47,7 +47,7 @@ namespace ConverUnidades
             {
                 textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 1000);
             }
-            if (from == "Onza (onz)" && to == "Gramo")
+            if (from == "Onza" && to == "Gramo")
             {
 	        textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1) * 28.349);
             }
