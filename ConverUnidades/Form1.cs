@@ -125,6 +125,28 @@ namespace ConverUnidades
                 textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 0.00003527396);
             }
 
+            ///LIBRAS CONTRA TODOS
+            if (from == "Libra" && to == "Tonelada")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 0.000453592);
+            }
+            if (from == "Libra" && to == "Kilogramo")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 0.453592);
+            }
+            if (from == "Libra" && to == "Gramo")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 453.592);
+            }
+            if (from == "Libra" && to == "Miligramo")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 453592);
+            }
+            if (from == "Libra" && to == "Onza")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 16);
+            }
+
             ///
 
             if (from == to)
