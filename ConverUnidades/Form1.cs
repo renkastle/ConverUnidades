@@ -55,6 +55,14 @@ namespace ConverUnidades
             {
         	textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 0.035274);
             }
+	    if (from == "Gramo" && to == "Miligramo")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 0.001);
+            }
+            if (from == "Miligramo" && to == "Gramo")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 1000);
+            }
             if (from == to)
             {
                 MessageBox.Show("Has introducido las mismas unidades");
