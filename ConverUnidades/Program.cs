@@ -10,6 +10,7 @@ namespace ConverUnidades
     {
         /// <summary>
         /// Punto de entrada principal para la aplicación.
+        ///Prueba de Edición
         /// </summary>
         [STAThread]
         static void Main()
