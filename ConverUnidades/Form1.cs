@@ -81,31 +81,29 @@ namespace ConverUnidades
                 textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 35.274);
             }
 
-            ///
+            ///GRAMO CONTRA TODOS
+            if (from == "Gramo" && to == "Tonelada")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 0.000001);
+            }
             if (from == "Gramo" && to == "Kilogramo")
             {
                 textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 0.001);
             }
-            if (from == "Kilogramo" && to == "Gramo")
+            if (from == "Gramo" && to == "Miligramo")
             {
                 textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 1000);
             }
-            if (from == "Onza" && to == "Gramo")
+            if (from == "Gramo" && to == "Libra")
             {
-	        textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 28.349);
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 0.00220462);
             }
             if (from == "Gramo" && to == "Onza")
             {
-        	textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 0.035274);
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 0, 0352739200000000003);
             }
-	    if (from == "Gramo" && to == "Miligramo")
-            {
-                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 0.001);
-            }
-            if (from == "Miligramo" && to == "Gramo")
-            {
-                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 1000);
-            }
+
+            ///
             if (from == to)
             {
                 MessageBox.Show("Has introducido las mismas unidades");
