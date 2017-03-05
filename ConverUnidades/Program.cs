@@ -50,6 +50,7 @@ namespace ConverUnidades
                 {
                 MessageBox.Show("Has introducido las mismas unidades");
                 }
+            //Probando//
                     Application.EnableVisualStyles();
                     Application.SetCompatibleTextRenderingDefault(false);
                     Application.Run(new Form1());
