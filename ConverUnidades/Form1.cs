@@ -244,6 +244,31 @@ namespace ConverUnidades
             {
                 textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 32.909645669291);
             }
+            ///MILLA CONTRA TODOS
+            if (from == "Milla" && to == "Metro")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 1609.344);
+            }
+            if (from == "Milla" && to == "Yarda")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 1760);
+            }
+            if (from == "Milla" && to == "Vara")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 1925.2714124213);
+            }
+            if (from == "Milla" && to == "Kilometro")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 1.609344);
+            }
+            if (from == "Milla" && to == "Pie")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 5280);
+            }
+            if (from == "Milla" && to == "Pulgada")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 63360);
+            }
             ///
 
             if (from == to)
