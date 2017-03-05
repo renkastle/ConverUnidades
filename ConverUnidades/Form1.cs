@@ -39,11 +39,11 @@ namespace ConverUnidades
             from = listBox1Desde.SelectedItem.ToString();
             to = listBox1Hasta.SelectedItem.ToString();
 
-            if (from == "Gramo (gr)" && == "Kilogramo (kg)")
+            if (from == "Gramo" && to == "Kilogramo")
             {
                 textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 1000);
             }
-            if (from == "Kilogramo (kg)" && == "Gramo (gr)")
+            if (from == "Kilogramo" && to == "Gramo")
             {
                 textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 0.001);
             }
