@@ -147,6 +147,28 @@ namespace ConverUnidades
                 textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 16);
             }
 
+            ///ONZA CONTRA TODOS
+            if (from == "Onza" && to == "Tonelada")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 0.00002834952);
+            }
+            if (from == "Onza" && to == "Kilogramo")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 0.0283495);
+            }
+            if (from == "Onza" && to == "Gramo")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 28.3495);
+            }
+            if (from == "Onza" && to == "Miligramo")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 28349.5);
+            }
+            if (from == "Onza" && to == "Libra")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 0.0625);
+            }
+
             ///
 
             if (from == to)
