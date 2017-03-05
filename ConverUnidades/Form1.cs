@@ -38,7 +38,7 @@ namespace ConverUnidades
 
             from = listBox1Desde.SelectedItem.ToString();
             to = listBox1Hasta.SelectedItem.ToString();
-
+            ///TONELADAS CONTRA TODOS ///
             if (from == "Tonelada" && to == "Kilogramo")
             {
                 textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 1000);
@@ -59,6 +59,29 @@ namespace ConverUnidades
             {
                 textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 35274);
             }
+            ///KILOGRAMO CONTRA TODOS///
+            if (from == "Kilogramo" && to == "Tonelada")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 0.001);
+            }
+            if (from == "Kilogramo" && to == "Gramo")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 1000);
+            }
+            if (from == "Kilogramo" && to == "Miligramo")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 1000000);
+            }
+            if (from == "Kilogramo" && to == "Libra")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 2.20462);
+            }
+            if (from == "Kilogramo" && to == "Onza")
+            {
+                textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 35.274);
+            }
+
+            ///
             if (from == "Gramo" && to == "Kilogramo")
             {
                 textBox2.Text = Convert.ToString(Convert.ToInt32(textBox1.Text) * 0.001);
